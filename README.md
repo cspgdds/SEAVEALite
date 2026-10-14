@@ -6,7 +6,7 @@ Jupyter notebooks for the SEAVEA toolkit (FabSim3, Flee/FabFlee, EasyVVUQ, QCG-P
 
 | Notebook | Description |
 |----------|-------------|
-| [seavea-tutorial.ipynb](notebooks/seavea-tutorial.ipynb) | End-to-end SEAVEA workflow: FabSim3 + FabFlee Mali simulation, EasyVVUQ sensitivity analysis, and QCG-PilotJob ensembles on HPC. |
+| [seavea-workflow.ipynb](notebooks/seavea-workflow.ipynb) | End-to-end SEAVEA workflow: FabSim3 + FabFlee Mali simulation, EasyVVUQ sensitivity analysis, and QCG-PilotJob ensembles on HPC. |
 
 ## Setup
 

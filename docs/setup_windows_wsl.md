@@ -1,6 +1,6 @@
 # Windows Setup Guide using WSL2
 
-This guide explains how to set up the SEAVEA tutorial workflow on Windows using WSL2 Ubuntu.
+This guide explains how to set up the SEAVEA workflow notebook on Windows using WSL2 Ubuntu.
 
 Native Windows PowerShell or Command Prompt is not recommended for the full FabSim3/FLEE/FabFlee workflow because the workflow uses:
 
@@ -57,7 +57,7 @@ If SSH asks whether to continue connecting, type:
 yes
 ```
 
-## 3. Clone the tutorial repository
+## 3. Clone the SEAVEA-notebooks repository
 
 ```bash
 mkdir -p ~/seavea-work
@@ -73,7 +73,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip wheel "setuptools<70"
 pip install -r requirements.txt
-python -m ipykernel install --user --name seavea-tutorial --display-name "SEAVEA Tutorial"
+python -m ipykernel install --user --name seavea-notebooks --display-name "SEAVEA Notebooks"
 ```
 
 ## 5. Clone and configure FabSim3

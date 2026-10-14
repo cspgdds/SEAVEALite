@@ -14,7 +14,7 @@ echo "Installing requirements..."
 pip install -r requirements.txt
 
 echo "Installing Jupyter kernel..."
-python -m ipykernel install --user --name seavea-tutorial --display-name "SEAVEA Tutorial"
+python -m ipykernel install --user --name seavea-notebooks --display-name "SEAVEA Notebooks"
 
 echo "Setup complete."
 echo "To activate the environment later, run:"

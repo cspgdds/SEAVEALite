@@ -1,6 +1,6 @@
 # Linux Setup Guide
 
-This guide explains how to set up the SEAVEA tutorial workflow on Linux.
+This guide explains how to set up the SEAVEA workflow notebook on Linux.
 
 Recommended environment:
 
@@ -35,7 +35,7 @@ If SSH asks whether to continue connecting, type:
 yes
 ```
 
-## 2. Clone the tutorial repository
+## 2. Clone the SEAVEA-notebooks repository
 
 ```bash
 mkdir -p ~/seavea-work
@@ -51,7 +51,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip wheel "setuptools<70"
 pip install -r requirements.txt
-python -m ipykernel install --user --name seavea-tutorial --display-name "SEAVEA Tutorial"
+python -m ipykernel install --user --name seavea-notebooks --display-name "SEAVEA Notebooks"
 ```
 
 ## 4. Clone and configure FabSim3

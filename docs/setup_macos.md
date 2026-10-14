@@ -1,6 +1,6 @@
 # macOS Setup Guide
 
-This guide explains how to set up the SEAVEA tutorial workflow on macOS.
+This guide explains how to set up the SEAVEA workflow notebook on macOS.
 
 Recommended environment:
 
@@ -55,7 +55,7 @@ If SSH asks whether to continue connecting, type:
 yes
 ```
 
-## 3. Clone the tutorial repository
+## 3. Clone the SEAVEA-notebooks repository
 
 ```bash
 mkdir -p ~/seavea-work
@@ -71,7 +71,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip wheel "setuptools<70"
 pip install -r requirements.txt
-python -m ipykernel install --user --name seavea-tutorial --display-name "SEAVEA Tutorial"
+python -m ipykernel install --user --name seavea-notebooks --display-name "SEAVEA Notebooks"
 ```
 
 ## 5. Clone and configure FabSim3

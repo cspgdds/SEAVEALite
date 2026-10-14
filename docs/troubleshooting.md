@@ -1,6 +1,6 @@
 # Troubleshooting Guide
 
-This guide lists common issues that can happen when setting up or running the SEAVEA tutorial workflow with FabSim3, FLEE, FabFlee, and EasyVVUQ.
+This guide lists common issues that can happen when setting up or running the SEAVEA workflow notebook with FabSim3, FLEE, FabFlee, and EasyVVUQ.
 
 ## 1. `fabsim: command not found`
 
