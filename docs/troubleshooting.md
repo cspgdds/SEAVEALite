@@ -9,7 +9,7 @@ This usually means the FabSim3 virtual environment is not activated.
 Run:
 
 ```bash
-cd ~/seavea-work/FabSim3
+cd ~/seavea/FabSim3
 source VirtualEnv/bin/activate
 which fabsim
 ```
@@ -17,7 +17,7 @@ which fabsim
 If `which fabsim` prints nothing, recreate the symlink:
 
 ```bash
-ln -sf ~/seavea-work/FabSim3/fabsim/bin/fabsim ~/seavea-work/FabSim3/VirtualEnv/bin/fabsim
+ln -sf ~/seavea/FabSim3/fabsim/bin/fabsim ~/seavea/FabSim3/VirtualEnv/bin/fabsim
 which fabsim
 ```
 
@@ -34,7 +34,7 @@ python3_command: /path/to/FabSim3/VirtualEnv/bin/python
 Then confirm the environment has the required packages:
 
 ```bash
-cd ~/seavea-work/FabSim3
+cd ~/seavea/FabSim3
 source VirtualEnv/bin/activate
 
 python - <<'PY'
@@ -49,7 +49,7 @@ PY
 Activate the FabSim3 environment and install the missing packages:
 
 ```bash
-cd ~/seavea-work/FabSim3
+cd ~/seavea/FabSim3
 source VirtualEnv/bin/activate
 pip install "numpy==1.26.4" easyvvuq chaospy plotly "setuptools<70" wheel folium ipython
 ```
@@ -173,7 +173,7 @@ localhost /path/to/flee
 Check `machines_user.yml`:
 
 ```bash
-grep -n "local_results\|local_configs" ~/seavea-work/FabSim3/fabsim/deploy/machines_user.yml
+grep -n "local_results\|local_configs" ~/seavea/FabSim3/fabsim/deploy/machines_user.yml
 ```
 
 Recommended local paths:

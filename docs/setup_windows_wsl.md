@@ -60,8 +60,8 @@ yes
 ## 3. Clone the SEAVEA-notebooks repository
 
 ```bash
-mkdir -p ~/seavea-work
-cd ~/seavea-work
+mkdir -p ~/seavea
+cd ~/seavea
 git clone https://github.com/cspgdds/SEAVEA-notebooks.git
 cd SEAVEA-notebooks
 ```
@@ -79,13 +79,13 @@ python -m ipykernel install --user --name seavea-notebooks --display-name "SEAVE
 ## 5. Clone and configure FabSim3
 
 ```bash
-cd ~/seavea-work
+cd ~/seavea
 git clone https://github.com/djgroen/FabSim3.git
 cd FabSim3
 python3 -m venv VirtualEnv
 source VirtualEnv/bin/activate
 python configure_fabsim.py
-ln -sf ~/seavea-work/FabSim3/fabsim/bin/fabsim ~/seavea-work/FabSim3/VirtualEnv/bin/fabsim
+ln -sf ~/seavea/FabSim3/fabsim/bin/fabsim ~/seavea/FabSim3/VirtualEnv/bin/fabsim
 ```
 
 Check FabSim3:
@@ -98,10 +98,10 @@ fabsim localhost -h
 ## 6. Clone and install FLEE
 
 ```bash
-cd ~/seavea-work
+cd ~/seavea
 git clone https://github.com/djgroen/flee.git
 cd flee
-source ~/seavea-work/FabSim3/VirtualEnv/bin/activate
+source ~/seavea/FabSim3/VirtualEnv/bin/activate
 pip install -e .
 ```
 
@@ -117,7 +117,7 @@ PY
 ## 7. Install FabFlee plugin
 
 ```bash
-cd ~/seavea-work/FabSim3
+cd ~/seavea/FabSim3
 source VirtualEnv/bin/activate
 fabsim localhost install_plugin:FabFlee
 ```
@@ -139,14 +139,14 @@ fabsim localhost -l tasks | grep -i flee
 Copy the example configuration:
 
 ```bash
-cp ~/seavea-work/SEAVEA-notebooks/examples/machines_user.example.yml \
-   ~/seavea-work/FabSim3/fabsim/deploy/machines_user.yml
+cp ~/seavea/SEAVEA-notebooks/examples/machines_user.example.yml \
+   ~/seavea/FabSim3/fabsim/deploy/machines_user.yml
 ```
 
 Edit it:
 
 ```bash
-nano ~/seavea-work/FabSim3/fabsim/deploy/machines_user.yml
+nano ~/seavea/FabSim3/fabsim/deploy/machines_user.yml
 ```
 
 Example WSL configuration:
@@ -163,9 +163,9 @@ localhost:
   corespernode: 1
   cpuspertask: 1
   taskspernode: 1
-  virtual_env_path: /home/YOUR_WSL_USERNAME/seavea-work/FabSim3/VirtualEnv
-  python3_command: /home/YOUR_WSL_USERNAME/seavea-work/FabSim3/VirtualEnv/bin/python
-  flee_location: /home/YOUR_WSL_USERNAME/seavea-work/flee
+  virtual_env_path: /home/YOUR_WSL_USERNAME/seavea/FabSim3/VirtualEnv
+  python3_command: /home/YOUR_WSL_USERNAME/seavea/FabSim3/VirtualEnv/bin/python
+  flee_location: /home/YOUR_WSL_USERNAME/seavea/flee
   enable_template_cache: false
   template_cache_size: 2000
 ```
@@ -181,7 +181,7 @@ Replace `YOUR_WSL_USERNAME` with the result.
 ## 9. Run the Mali2012 baseline
 
 ```bash
-cd ~/seavea-work/FabSim3
+cd ~/seavea/FabSim3
 source VirtualEnv/bin/activate
 fabsim localhost sflee:mali2012,simulation_period=50
 fabsim localhost fetch_results
@@ -202,7 +202,7 @@ Total error
 ## 10. Run EasyVVUQ sensitivity analysis
 
 ```bash
-cd ~/seavea-work/FabSim3
+cd ~/seavea/FabSim3
 source VirtualEnv/bin/activate
 
 fabsim localhost flee_init_SA:mali2012
@@ -251,7 +251,7 @@ explorer.exe .
 You can open the FabFlee sensitivity-analysis output folder using:
 
 ```bash
-explorer.exe ~/seavea-work/FabSim3/plugins/FabFlee/SA/flee_SA_SCSampler_mali2012/
+explorer.exe ~/seavea/FabSim3/plugins/FabFlee/SA/flee_SA_SCSampler_mali2012/
 ```
 
 ## Troubleshooting
@@ -281,6 +281,6 @@ ssh localhost "echo SSH works"
 If `fabsim` is not found, activate the FabSim3 environment again:
 
 ```bash
-cd ~/seavea-work/FabSim3
+cd ~/seavea/FabSim3
 source VirtualEnv/bin/activate
 ```
