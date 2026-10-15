@@ -1,6 +1,17 @@
-# SEAVEA Notebooks
+# SEAVEALite
 
-Jupyter notebooks for the SEAVEA toolkit (FabSim3, Flee/FabFlee, EasyVVUQ, QCG-PilotJob).
+**SEAVEALite** is a lightweight collection of tutorials, Jupyter notebooks and examples for the
+[SEAVEA toolkit](https://www.seavea-project.org/), an open-source framework for Verification,
+Validation and Uncertainty Quantification (VVUQ) of simulation codes.
+
+It provides short, practical walkthroughs of the core SEAVEA components:
+
+- **EasyVVUQ**: uncertainty quantification and sensitivity analysis
+- **FabSim3**: automates simulation workflows on local machines and HPC systems
+- **QCG-PilotJob**: runs large ensembles efficiently on HPC
+
+The material is intended for new users who want to get started quickly. For the full toolkit,
+including surrogate modelling and multiscale coupling, see the individual SEAVEA component repositories.
 
 ## Notebooks
 
